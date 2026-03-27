@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-BksBD8oq.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="nav-logo" href="./index.html" aria-label="Site logo">
+        <svg class="nav-logo-icon" width="100" height="30">
+          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main>
+      <div class="container">
+        
+        <!-- QUOTE -->
+        <div class="quote-box">
+          <h3>Quote of the day</h3>
+          <p id="quote">Loading...</p>
+          <p id="author"></p>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div id="filters" style="display: flex; gap: 10px; margin: 20px 0;">
+          <button type="button" data-filter="Muscles">Muscles</button>
+          <button type="button" data-filter="Body parts">Body parts</button>
+          <button type="button" data-filter="Equipment">Equipment</button>
+        </div>
+
+        <!-- SEARCH -->
+        <input id="search" placeholder="Search..." style="width: 100%; padding: 10px; margin: 10px 0;" />
+
+    <!-- CATEGORIES -->
+    <div id="categories" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0;"></div>
+
+    <!-- EXERCISES -->
+    <div id="exercises" style="margin: 30px 0;"></div>
+
+        <!-- PAGINATION -->
+        <div id="pagination" style="display: flex; gap: 5px; flex-wrap: wrap; margin: 20px 0;"></div>
+
+      </div>
+    </main>
+
+  </body>
+</html>
