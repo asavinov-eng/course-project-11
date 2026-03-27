@@ -1,0 +1,91 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./vite-promo.css');
+@import url('./badges.css');
+@import url('./back-link.css');
+@import url('./footer.css');
+@import url('./quote.css');
+main {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.quote-box {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.filters-section {
+  flex: 1;
+}
+main {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.right-side {
+  flex: 1;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#search {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#categories div {
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+#categories div {
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#categories div:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+.filters button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #bbb;
+}
